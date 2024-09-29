@@ -18,10 +18,12 @@ Before you begin, ensure you have the following:
 1. In the Azure portal, click on **"Create a resource"**.
 2. Select **"Virtual Machine"** from the list of available resources.
 3. Click on **"Create"** to start the VM creation process.
+![ss-1](https://github.com/user-attachments/assets/17cdb76d-d567-4b29-9e0f-b0a07443e5cf)
 
-![Create a Resource](/media/ss-1.PNG)
+
 **Create a Resource**
-![Click on create](/media/ss-2.PNG)
+![ss-2](https://github.com/user-attachments/assets/927d5d06-f3a2-453e-bd7c-d5c3857a9c4b)
+
 **Click on create**
 
 ### Step 3: Configure the VM Settings
@@ -30,13 +32,15 @@ Before you begin, ensure you have the following:
 3. **Administrator Account**: Set up the username and password for the VM.
 4. **Inbound Ports**: Select the inbound ports you want to allow (e.g., SSH, RDP).
 
-![Select resource groups and VM name](/media/ss-3.PNG)
+![ss-3](https://github.com/user-attachments/assets/347eb30d-af68-44d5-83ec-1471b6ce1547)
 **Select a resource group and VM name**
-![Select Image type and Machine Size](/media/ss=4.PNG)
+![ss=4](https://github.com/user-attachments/assets/a639202b-89f6-4853-a070-1a46fa70049c)
 **Select Image type and Machine Size**
-![Add username and create a new SSH key also select inbound ports](/media/ss-5.PNG)
+![ss-5](https://github.com/user-attachments/assets/ab6dea83-4614-4645-bccb-95668756abb8)
+
 **Add username and create a new SSH key also select inbound ports**
-![Configure disk size and type](/media/ss-6.PNG)
+![ss-6](https://github.com/user-attachments/assets/e90420b7-9b6b-44ca-b572-06632ad4290c)
+
 **Configure disk size and type**
 
 ### Step 4: Review and Create the VM
@@ -45,13 +49,17 @@ Before you begin, ensure you have the following:
 3. After validation, click on **"Create"** to deploy the VM.
 4. Download the SSH key and create resource.
 
-![Click on Review and create](/media/ss-7.PNG)
+![ss-7](https://github.com/user-attachments/assets/c9a1bf17-8fa2-4dfc-a447-a00e48f5940d)
+
 **Click on Review and create**
-![Download the SSH key and create resource](/media/ss-8.PNG)
+![ss-8](https://github.com/user-attachments/assets/b6c0c54c-5783-4759-a73c-8f00e14ff883)
+
 **Download the SSH key and create resource**
-![Wait for deployment](/media/ss-9.PNG)
+![ss-9](https://github.com/user-attachments/assets/d159dfc6-9768-44ec-90f7-669777bf85a4)
+
 **Wait for deployment**
-![Deployment done](/media/ss-10.PNG)
+![ss-10](https://github.com/user-attachments/assets/88c503ab-bbc0-4ab4-8992-7576793d30e4)
+
 **Deployment done**
 
 
@@ -60,8 +68,7 @@ Before you begin, ensure you have the following:
 2. Click on **"Add data disk"**.
 3. Configure the new disk settings such as Name, Size, and Type.
 4. Click on **"Save"** to attach the disk to the VM.
-
-![In seetings tab, select **"Disks"**, click on **"Create and Attachne Disk"** and configure the disk settings](/media/ss-11.PNG)
+![ss-11](https://github.com/user-attachments/assets/f642e097-5d1f-46c1-b977-fcdacc612a62)
 **In seetings tab, select **"Disks"**, click on **"Create and Attachne Disk"** and configure the disk settings**
 
 ### Step 6: Install and Run a Docker Container
@@ -72,7 +79,8 @@ Before you begin, ensure you have the following:
      sudo apt-get update
      sudo apt-get install -y docker.io
      ```
-    ![Installing Docker](/media/ss-12.PNG)
+  ![ss-12](https://github.com/user-attachments/assets/31eaeb55-ca19-481d-86c6-a4f442db9e98)
+
 
 2. **Start Docker Service**:
    - Start the Docker service and enable it to start on boot:
@@ -80,9 +88,12 @@ Before you begin, ensure you have the following:
      sudo systemctl start docker
      sudo systemctl enable docker
      ```
-     ![starting docker](/media/ss-13.PNG)
-     ![](/media/ss-14.PNG)
-     ![](/media/ss-15.PNG)
+![ss-13](https://github.com/user-attachments/assets/7536bdd4-f5fa-47de-831d-d81b768413f9)
+
+ ![ss-14](https://github.com/user-attachments/assets/3064ca03-b0ec-498d-ad53-e4e80d6e968f)
+
+  ![ss-15](https://github.com/user-attachments/assets/a2d753f8-209a-4065-92c9-f011f167a1cc)
+
 
 3. **Pull a Docker Image**:
    - Pull a Docker image from Docker Hub, for example, Nginx:
